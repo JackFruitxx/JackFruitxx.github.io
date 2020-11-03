@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9,user-scalable=0"/>
+    <title>验证结果</title>
+    <style type="text/css">
+		div{
+			line-height:50px;
+			text-align:center;
+			font-size:28px;
+		}
+	</style>
+    <script type="text/javascript">
+        function reloadImg() {
+            /*var el=document.getElementById("headerPhoto");
+            el.src=el.src+"?t="+new Date().getTime();*/
+        }
+
+    </script>
+</head>
+<body style="margin:20px auto;width:90%" onload="reloadImg()">
+<div>您的进入校园验证结果</div>
+
+<div  style="color:#00AA00;">
+	<div><img id="headerPhoto" style="max-width:150px" src="hwx.jpg"/></div>
+    <span >胡文鑫</span>，<span>男</span>，<span>21</span>岁
+    <br/>
+    部门：<span>工学院</span>
+
+    <br/> <span >您可以进校</span>
+    <br/><img src="right.jpg" style="width: 150px"/>
+  <!--  <br/>当前时间：<span></span>-->
+</div>
+<div style="font-size: 20px">当前时间是：<span><script type="text/javascript">
+    var t=new Date();
+    var year=t.getFullYear();
+    var month=t.getMonth()+1;
+    var day=t.getDate();
+    var hour=t.getHours();
+    var minute=t.getMinutes();
+    if(minute<10){
+    var showtime=month + "月" + day+"日 "+hour+":0"+minute;}
+    else{var showtime=month + "月" + day+"日 "+hour+":"+minute;}
+    document.write(showtime);
+    </script></span></div>
+</body>
+
+</html>
